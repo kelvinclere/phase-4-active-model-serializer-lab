@@ -8,8 +8,7 @@ class TagsController < ApplicationController
 
   def show
     tag = Tag.find(params[:id])
-    render json: tag
-  end
+    self.object.content[0..39]  end
 
   private
 
